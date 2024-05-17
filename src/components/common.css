@@ -1,0 +1,116 @@
+/* TextNode.jsx */
+.text-node{
+  background: #fdfdfd;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  color: #222;
+  font-size: 12px;
+  text-align: center;
+  min-width: 150px;
+  max-width: 200px;
+  border-radius: 5px 10px 5px 10px;
+}
+.text-node:hover{
+  cursor: grab;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(144, 233, 245);
+  color: #3d3d3d;
+  padding: 2px 5px;
+  font-weight: 700;
+  font-size: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 9px;
+}
+.chat-icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.whatsapp-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+}
+.body{
+  padding: 5px;
+}
+.body:empty{
+  padding: 12px 5px;
+}
+
+/* NodesPanel.jsx */
+.node-content{
+  font-size: 10px;
+}
+.settings-panel,
+.nodes-panel{
+  max-width: 190px;
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #3939f8;
+  color: #3939f8;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.react-flow__minimap{
+  background: #fff;
+  border: 1px solid #3939f8;
+  color: #3939f8;
+  border-radius: 4px;
+}
+.setting-panel-header,
+.node-panel-header{
+  margin-bottom: 15px;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+/* SaveButton.jsx */
+.save-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #3939f8;
+  color: #3939f8;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.save-button:hover {
+  background-color: #3939f8;
+  color: #fff;
+}
+
+/* SettingPanel.jsx */
+.settings-panel input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #bdbdbd;
+  position: relative;
+  z-index: 10;
+}
+.settings-panel input:focus-visible{
+  border: 1px solid #7c7c7c;
+  outline: none;
+}
+.back-to-nodes{
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.back-to-nodes img{
+  width: 15px;
+  height: 15px;
+}
